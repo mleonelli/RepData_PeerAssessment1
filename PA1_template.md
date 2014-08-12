@@ -182,7 +182,7 @@ print(g)
 si <- sessionInfo()
 
 # Privacy matters
-si$locale <- '... [removed for privacy purposes, irrelevant to this analysis]'
+si$locale <- '... [removed]'
 
 # Show it
 si
@@ -193,7 +193,7 @@ si
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## 
 ## locale:
-## [1] ... [removed for privacy purposes, irrelevant to this analysis]
+## [1] ... [removed]
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
