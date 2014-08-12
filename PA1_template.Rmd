@@ -119,7 +119,8 @@ As a strategy, I decided to use the average for the 5-minute interval across all
 
 ```{r}
 activityAll <- merge(activities, dt, by = "interval", suffixes = c("", ".y"))
-nas <- is.na(activityAll$steps)
+
+nas <- is.na(activityAll$steps) | activityAll$steps ==0
 activityAll$steps[nas] <- activityAll$steps.y[nas]
 ```
 ##### 4. Make a histogram of the total number of steps taken each day and Calculate and report the **mean** and **median** total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
@@ -161,7 +162,7 @@ print(g)
 si <- sessionInfo()
 
 # Privacy matters
-si$locale <- '... [removed for privacy purposes, irrelevant to this analysis]'
+si$locale <- '... [removed]'
 
 # Show it
 si
