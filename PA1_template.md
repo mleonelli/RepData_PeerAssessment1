@@ -143,7 +143,7 @@ mean <- mean(activityAll$steps)
 median <- median(activityAll$steps)
 ```
 
-Which gives me a mean of 37 steps and a median of 0 steps.
+Which gives me a mean of 55 steps and a median of 30.2075 steps.
 
 
 ```r
